@@ -4,12 +4,34 @@
 <head>
     <link rel="stylesheet" href="mystyle.css">
 </head>
+<!-- option 1 Bootstrap bundle with popper -->
+
+<script>
+    function getLyrics() {
+        let artist = document.getElementById('artist').value
+        let song = document.getElementById('song').value
+        let URL = encodeURI('https://api.lyrics.ovh/v1/' + artist + '/' + song)
+        fetch(URL).then(response => {
+            return response.json()
+
+        }).then(result => {
+            document.getElementById('iyrics').innerHTML = result.lyrics
+        }).catch(err => {
+            console.log(err)
+        })
+    }
+
+
+</script>
 
 <body>
     <h1>This is Nikhil Porika</h1>
     <p>This is the Paragrah for the text
         which is the main part for the Css file
     </p>
+
+
+
 </body>
 
 </html>
