@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Nikhil New WebSite Design
+    </title>
+</head>
+
+<body>
+    <h1>Onclick event with button</h1>
+
+
+    <button onclick="myFuction()">Click Here</button>
+    <p id="cliks"></p>
+
+
+    <script>
+        function myFuction() {
+            document.getElementById("cliks").innerHTML = "Just clicked on me check onclick event of button tag";
+        }
+    </script>
+
+
+    <h1>Onclick Event with p tag</h1>
+
+    <p id="demm" onclick="myclics()">Click Here</p>
+    <script>
+        function myclics() {
+            document.getElementById("demm").innerHTML = "you just clicked on me to check onclick event of p tag";
+        }
+    </script>
+
+    <h1>OnClick event for the JavaScipt</h1>
+
+    <p id="dem2">Click on me</p>
+    <script>
+        document.getElementById("dem2").onclick = function () {
+            myfunc()
+
+        };
+        function myfunc() {
+            document.getElementById("dem2").innerHTML = "Just clicked on javascipt onClick Event";
+        }
+
+
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
